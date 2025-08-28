@@ -1,8 +1,14 @@
-#include<stdio.h>
-int main (){
-int x;
-printf("Enter a number:");
-scanf("%d",&x);
-printf("%d", x % 2 == 0);
-return 0;
+#include <stdio.h>
+
+int main() {
+    int x;
+    printf("Enter a number: ");
+    scanf("%d", &x);
+
+    if (x % 2 == 0)
+        printf("%d is Even\n", x);
+    else
+        printf("%d is Odd\n", x);
+
+    return 0;
 }
